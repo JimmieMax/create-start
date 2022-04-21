@@ -1,6 +1,6 @@
 {
   "name": "create-start",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "create start of app",
   "engines": {
     "node": ">=16.0.0"

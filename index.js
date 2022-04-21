@@ -26,17 +26,19 @@ const FRAMEWORKS = [{
     name: 'vue',
     color: green,
     variants: [{
-            name: 'vue',
-            display: 'JavaScript',
-            color: yellow
-        },
-        {
-            name: 'vue-ts',
-            display: 'TypeScript',
-            color: blue
-        }
-    ]
-}, ]
+        name: 'vue-ts',
+        display: 'TypeScript',
+        color: blue
+    }]
+}, {
+    name: 'react',
+    color: cyan,
+    variants: [{
+        name: 'react-ts',
+        display: 'TypeScript',
+        color: blue
+    }]
+}]
 
 const TEMPLATES = FRAMEWORKS.map(
     (f) => (f.variants && f.variants.map((v) => v.name)) || [f.name]
