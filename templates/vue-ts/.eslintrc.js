@@ -10,11 +10,14 @@ module.exports = {
   //   },
   extends: ["plugin:vue/vue3-essential", "@vue/standard"],
   rules: {
-    eqeqeq: 2,
+    eqeqeq: "error",
     "class-methods-use-this": 0,
   },
   // 定义全局变量
-  //   globals: {
-  //     location: "readonly",
-  //   },
+  globals: {
+    defineProps: 'readonly',
+    defineEmits: 'readonly',
+    defineExpose: 'readonly',
+    withDefaults: 'readonly',
+  }
 };
